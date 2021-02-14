@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+
+.container {
+  margin: 0 auto;
+  border: 2px solid red;
+}
+@media screen and (max-width: 599px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.header .header__body {
+  background: url("../../img/Layer 7.png") no-repeat;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 585px;
+  background-size: 100%;
+  flex-wrap: wrap;
+}
+.header .header__logo {
+  height: 27%;
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid goldenrod;
+  align-items: center;
+}
+.header .header__logo p {
+  align-items: center;
+  font-size: 50px;
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header .header__logo p {
+    font-size: 25px;
+  }
+}
+.header .header__navigation {
+  height: 13%;
+  border: 2px solid green;
+  width: 40%;
+}
+.header .header__navigation .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.header .header__navigation .row .row__col {
+  width: 25%;
+  overflow: hidden;
+  text-align: center;
+}
+.header .header__navigation .row .row__col a {
+  font-size: 14px;
+  color: white;
+}
+.header .header__navigation .row .row__col a:hover {
+  color: gold;
+}
+.header .header__havegood {
+  height: 13.5%;
+  border: 2px solid red;
+}
+.header .header__havegood h1 {
+  color: white;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header .header__just {
+  height: 15%;
+  font-weight: 600;
+}
+.header .header__just p {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+.header .header__gety button {
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #50c3af;
+  font-weight: 600;
+}
