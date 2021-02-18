@@ -390,39 +390,49 @@ p {
     text-align: center;
   }
 }
-.fully__body .column h3::before {
+.fully__body__wrapers {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+.fully__body__wrapers .column {
+  margin-bottom: 30px;
+  flex-basis: 100%;
+}
+.fully__body__wrapers .column h3::before {
   content: " ";
   background: url(../../img/znaks/lifebuoy_PNG33.png) no-repeat;
   background-size: 25px;
   padding: 10px 10px 10px 30px;
   vertical-align: middle;
 }
-.fully__body .column h3 {
+.fully__body__wrapers .column h3 {
   padding-top: 63px;
 }
-.fully__body .column p {
+.fully__body__wrapers .column p {
   font-size: 16px;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .fully__body .column p {
+  .fully__body__wrapers .column p {
     padding: 0 20px;
     font-size: 14px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .fully__body .column p {
+  .fully__body__wrapers .column p {
     padding: 0 30px;
   }
 }
-.fully__body .column button {
+.fully__body__wrapers .column button {
   margin: 38px 0 0px 0;
   text-transform: none;
 }
-.fully__body .column button:hover {
+.fully__body__wrapers .column button:hover {
   background: #d2d6db;
   color: white;
 }
-.fully__body .column button:active {
+.fully__body__wrapers .column button:active {
   background: #d2d6db;
   color: gold;
   transition: 0.1s;

@@ -107,7 +107,7 @@ p {
                 font-size    : 16px;
                 font-weight  : 600;
                 color        : white;
-transition: 0.5s;
+                transition   : 0.5s;
 
                 @media screen and (min-width: 320px) and(max-width:480px) {
                     font-size: 13px;
@@ -258,6 +258,7 @@ transition: 0.5s;
 }
 
 .gallery {
+
     min-height: 526px;
     background: white 0 50%;
 
@@ -284,10 +285,7 @@ transition: 0.5s;
 
             &_block {
                 padding-top: 65px;
-
-                flex-basis: 45%;
-
-
+                flex-basis : 45%;
 
                 @media screen and (min-width: 320px) and(max-width:480px) {
                     flex-basis   : 100%;
@@ -343,49 +341,64 @@ transition: 0.5s;
     &__body {
         max-width: 600px;
         margin   : 0 auto;
-        @media screen  and(max-width:768px) {
+
+        @media screen and(max-width:768px) {
 
             text-align: center;
         }
 
-        .column {
+        &__wrapers {
+            display        : flex;
+            justify-content: space-around;
+            flex-basis     : 100%;
+            flex-wrap      : wrap;
+            
+            .column {
+                margin-bottom: 30px;
+                flex-basis    : 100%;               
 
-            h3::before {
-                content        : ' ';
-                background     : url(../../img/znaks/lifebuoy_PNG33.png) no-repeat;
-                background-size: 25px;
-                padding        : 10px 10px 10px 30px;
-                vertical-align : middle;
+                h3::before {
+                    content        : ' ';
+                    background     : url(../../img/znaks/lifebuoy_PNG33.png) no-repeat;
+                    background-size: 25px;
+                    padding        : 10px 10px 10px 30px;
+                    vertical-align : middle;
 
-            }
+                }
 
-            h3 {
-                padding-top: 63px;
-            }
-p{
-    font-size: 16px;
-    @media screen and (min-width: 320px) and(max-width:480px) {
-        padding: 0 20px; 
-        font-size: 14px;
-    }
+                h3 {
+                    padding-top: 63px;
+                }
 
-    @media screen and (min-width: 481px) and(max-width:768px) {
-        padding: 0 30px;
-    }
-}
-            button {
-                margin: 38px 0 0px 0;
-                text-transform: none;
-            }
-            button:hover{
-                background:#d2d6db ;
-                color: white;
-            }
-            button:active{
-                background:#d2d6db ;
-                color: gold;
-                transition: 0.1s;
-                
+                p {
+                    font-size: 16px;
+
+                    @media screen and (min-width: 320px) and(max-width:480px) {
+                        padding  : 0 20px;
+                        font-size: 14px;
+                    }
+
+                    @media screen and (min-width: 481px) and(max-width:768px) {
+                        padding: 0 30px;
+                    }
+                }
+
+                button {
+                    margin        : 38px 0 0px 0;
+                    text-transform: none;
+                }
+
+                button:hover {
+                    background: #d2d6db;
+                    color     : white;
+                }
+
+                button:active {
+                    background: #d2d6db;
+                    color     : gold;
+                    transition: 0.1s;
+
+                }
             }
         }
 
