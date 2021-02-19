@@ -404,3 +404,96 @@ p {
 
     }
 }
+.gallery2 {
+
+    min-height: 441px;
+    background: white 0 50%;
+
+
+    &__body {
+        max-width: 600px;
+        margin   : 0 auto;
+
+
+        &__wrappers {
+            display        : flex;
+            justify-content: space-around;
+            flex-wrap      : wrap;
+            flex-basis     : 100%;
+            width          : 100%;
+
+            @media screen and(min-width:320px) and(max-width:480px) {
+                justify-content: center;
+            }
+
+            @media screen and (min-width: 481px) and(max-width:768px) {
+                justify-content: center;
+            }
+
+            &_block {
+                padding-top: 58px;
+                flex-basis :30%;
+               
+                
+
+                @media screen and (min-width: 320px) and(max-width:480px) {
+                    flex-basis   : 100%;
+                    margin-bottom: 30px;
+                    text-align   : center;
+                }
+
+                @media screen and (min-width: 481px) and(max-width:768px) {
+                    margin-bottom: 30px;
+                    flex-basis   : 45%;
+                    text-align   : center;
+                }
+                
+
+
+                img {
+                   
+                    height: 138px;
+                    width: 180px;
+                    text-align: start;
+                    margin    : 0px;
+                  
+                }
+
+                h3 {
+                    text-align: start;
+
+                    padding: 34px 0px 35px 0px;
+
+                    @media screen and (min-width: 320px) and(max-width:480px) {
+                        text-align: center;
+                    }
+
+                    @media screen and (min-width: 481px) and(max-width:768px) {
+
+                        text-align: center;
+                    }
+                }
+                    p{
+                        padding: 0 4px 0 0;
+                        @media screen and(max-width:768px) {
+                            padding: 0 15px; 
+                         }
+                    }
+                a {
+                    display: inline-block;
+                    margin: 34px 0 0px 0;
+                    color: #00c4b0;
+                    transition: 0.4s;
+                    border: 2px solid #00c4b0;
+                    padding: 10px;
+                    background: #40474e left;
+                }
+                a:hover{
+                    color: white;
+                    background-position: right;
+                }
+
+            }
+        }
+    }
+}
